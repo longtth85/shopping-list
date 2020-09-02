@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppinglist</title>
+</head>
+<body>
+    <h1>ShoppingList</h1>
+    <ul></ul>
+
+    <script>
+        const ul = document.querySelector('ul');
+        // Catch add item
+        window.api.receive('item:add');
+
+        // Clear items
+        window.api.delete('item:clear');
+
+        // Remove item
+        ul.addEventListener('dblclick', removeItem);
+
+        function removeItem(e) {
+            e.target.remove();
+        }
+
+    </script>
+</body>
+</html>

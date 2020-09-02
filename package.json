@@ -1,0 +1,16 @@
+{
+  "name": "shoppinglist",
+  "version": "1.0.0",
+  "description": "electron shopping list app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "git@github.com:longtth85/shopping-list.git",
+  "author": "Long <longtth85@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^10.1.1",
+    "eslint": "^7.8.1"
+  }
+}
